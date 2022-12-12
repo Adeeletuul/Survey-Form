@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1 id="title">Work satisfaction survey</h1>
+    </header>
+
+    <main>
+      <div id="container">
+        <p id="description">
+          Survey goal is to find out how many people are not satisfied with the
+          work they do. Also what are the reasons why people are not satisfied
+          with the work and have they done something to change it.
+        </p>
+        <p></p>
+        <form id="survey-form">
+          <div id="personal-info">
+            <div class="label">
+              <label for="name" id="name-label">Name</label>
+              <input type="text" id="name" placeholder="Name" required /> <br />
+            </div>
+            <div class="label">
+              <label for="email" id="email-label">Email</label>
+              <input
+                type="text"
+                type="email"
+                id="email"
+                placeholder="Email"
+                required
+              />
+              <br />
+            </div>
+            <div class="label">
+              <label for="number" id="age-label">Age</label>
+              <input
+                type="number"
+                id="number"
+                min="1"
+                max="125"
+                placeholder="Age"
+              />
+            </div>
+          </div>
+          <div class="label">
+            <label for="careerfield">
+              <div class="field-label">What career field do you working?</div>
+            </label>
+            <select id="dropdown">
+              <option value="architecture">
+                Architecture, Planning & Environmental Design
+              </option>
+              <option value="arts">Arts,Culture & Entertainment</option>
+              <option value="business">Business</option>
+              <option value="communications">Communications</option>
+              <option value="education">Education</option>
+              <option value="engingeering">
+                Engineering & Computer Science
+              </option>
+              <option value="environment">Environment</option>
+              <option value="government">Government</option>
+              <option value="health">Health & Medicine</option>
+              <option value="law">Law & Public Policy</option>
+              <option value="social">Social Impact/Community Service</option>
+              <option value="science">Sciences-Biological & Physical</option>
+            </select>
+          </div>
+
+          <div class="label">
+            <label for="workSatis">
+              <div class="field-label">
+                How satisfied are you with the work?
+              </div>
+            </label>
+
+            <ul style="list-style: none">
+              <li class="radio">
+                <input
+                  name="workSatis"
+                  id="verysatisfied"
+                  type="radio"
+                  value="very satisfied"
+                />
+                <label for="verysatisfied">Very Satisfied</label>
+              </li>
+              <li class="radio">
+                <input
+                  name="workSatis"
+                  id="satisfied"
+                  type="radio"
+                  value="somewhat satisfied"
+                />
+                <label for="satisfied"> Satisfied</label>
+              </li>
+              <li class="radio">
+                <input
+                  name="workSatis"
+                  id="neithersatisfied"
+                  type="radio"
+                  value="neither satisfied nor dissatisfied"
+                />
+                <label for="neithersatisfied"
+                  >Neither Satisfied Nor Dissatisfied</label
+                >
+              </li>
+              <li class="radio">
+                <input
+                  name="workSatis"
+                  id="somedissatisfied"
+                  type="radio"
+                  value="somewhat dissatisfied"
+                />
+                <label for="somedissatisfied">Somewhat Dissatisfied</label>
+              </li>
+              <li class="radio">
+                <input
+                  name="workSatis"
+                  id="verydissatisfied"
+                  type="radio"
+                  value="very dissatisfied"
+                />
+                <label for="verydissatisfied">Very Dissatisfied</label>
+              </li>
+            </ul>
+          </div>
+
+          <div class="label">
+            <label for="">
+              <div class="field-label">
+                What are the reason(s) that you are not satisfied with work?
+              </div>
+            </label>
+            <ul style="list-style: none">
+              <li class="checkbox">
+                <input type="checkbox" id="salary" value="salary" />
+                <label for="salary">Salary</label>
+              </li>
+              <li class="checkbox">
+                <input type="checkbox" id="coworkers" value="coworkers" />
+                <label for="coworkers">Coworkers</label>
+              </li>
+              <li class="checkbox">
+                <input type="checkbox" id="workeducation" value="workEdu" />
+                <label for="workeducation">
+                  Work doesn´t match to my education backround
+                </label>
+              </li>
+              <li class="checkbox">
+                <input
+                  type="checkbox"
+                  id="workenvironment"
+                  value="work environment"
+                />
+                <label for="workenvironment">Work environment</label>
+              </li>
+              <li class="checkbox">
+                <input type="checkbox" id="time" value="time" />
+                <label for="time">Time</label>
+              </li>
+            </ul>
+          </div>
+
+          <div class="label flex-col">
+            <label for="worksatsdone">
+              <div class="field-label">What have you done to change it?</div>
+            </label>
+            <textarea
+              rows="4"
+              cols="10"
+              placeholder="Enter your ?..."
+            ></textarea>
+          </div>
+
+          <div>
+            <input id="submit" type="submit" value="Submit" />
+          </div>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
